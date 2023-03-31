@@ -1,5 +1,18 @@
+body{
+    margin-top: 10vh;
+    display:flex; 
+    justify-content:center;
+    min-height:100vh;
+
+}
+.blog-container{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+}
 
 header {
+    height: 60px;;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
