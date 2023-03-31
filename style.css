@@ -87,3 +87,13 @@ footer span{
 footer a{
     color:rgb(62, 146, 248);
 }
+/*mobile setting*/
+@media (max-width: 700px) {
+    body{
+        margin:2rem 2rem;
+    }
+    main{
+        grid-template-columns:1fr;
+        grid-template-rows:repeat(8,auto);
+    }
+  }
