@@ -1,5 +1,5 @@
 body{
-    margin-top: 10vh;
+    margin-top: 5vh;
     display:flex; 
     justify-content:center;
     /* min-height:100vh; */
@@ -13,6 +13,7 @@ body{
 }
 /*header:*/
 header {
+    padding-right:20px;
     height: 60px;;
     display: flex;
     justify-content: space-between;
@@ -41,7 +42,7 @@ main {
     gap:20px 15px;
 }
 .card {
-    height: 24vh;
+    height: 22vh;
     padding: 2vh 4vh;
     overflow: hidden;
     position: relative;
@@ -68,4 +69,21 @@ a.continue{
 }
 .tag-design{
     color:green;
+}
+/*footer:*/
+footer{
+    margin-top: 15px;
+    padding:3vh;
+    background-color: rgb(237, 237, 255);
+    height: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    text-align: center;
+}
+footer span{
+    color:rgb(154, 154, 154);
+}
+footer a{
+    color:rgb(62, 146, 248);
 }
