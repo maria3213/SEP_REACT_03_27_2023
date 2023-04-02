@@ -1,0 +1,50 @@
+/* *{
+    box-sizing: border-box;
+} */
+body{
+    margin-top: 5vh;
+    display:flex; 
+    justify-content:center;
+    
+    /* min-height:100vh; */
+
+}
+.blog-container{
+    width: 1000px;
+}
+/*post article*/
+main{
+    width:600px;
+}
+.title-section{
+    margin-bottom: 20px;
+}
+.block{
+    border:2px solid lightgrey;
+}
+
+h1{
+    font-size:40px;
+    margin:0;
+}
+h2{
+    font-size: 35px;
+    margin:0;
+}
+h3{
+    font-size: 30px;
+    margin:0;
+}
+p{
+    margin:10px 0px;
+}
+a{
+    color:rgb(62, 146, 248);
+}
+span{
+    color: rgb(147, 147, 147);
+}
+/* aside */
+aside{
+    width:350px;
+}

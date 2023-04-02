@@ -11,26 +11,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-/*header:*/
-header {
-    padding-right:20px;
-    height: 60px;;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 
-}
-.search-icon{
-    width:15px;
-    height:15px;
-}
-.subscribe{
-    color:gray;
-}
-header > u{
-    font-size:30px;
-    color:rgb(96, 96, 96);
-}
 
 /* blog content */
 main {

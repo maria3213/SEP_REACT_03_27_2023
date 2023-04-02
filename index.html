@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/header.css">
+
 
 </head>
 <body>
@@ -17,10 +19,12 @@
         </header>
         <main class="blog-cards">
             <div class="card">
-                <strong class="tag-world">World</strong><br>
-                <h2>Example Blog Post</h2>
-                <p class="date">Nov 12</p>
-                <p class="message">This card represents an example post.</p><br>
+                <div  onclick="location.href='./details.html';">
+                    <strong class="tag-world">World</strong><br>
+                    <h2>Example Blog Post</h2>
+                    <p class="date">Nov 12</p>
+                    <p class="message">This card represents an example post.</p><br>
+                </div>
                 <a href="#" class="continue">Continue reading</a>
             </div>
             <div class="card">
