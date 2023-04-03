@@ -1,13 +1,15 @@
 body{
     margin-top: 5vh;
     display:flex; 
+    flex-direction: column;
     justify-content:center;
     /* min-height:100vh; */
 
 }
 .blog-container{
 
-    width: 1000px;
+    width: 60%;
+    margin:0 auto 8rem auto;
     display: flex;
     flex-direction: column;
 }
@@ -15,7 +17,7 @@ body{
 
 /* blog content */
 main {
-    height:80vh;
+    min-height:600px;
     overflow: auto;
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -23,19 +25,21 @@ main {
     gap:20px 15px;
 }
 .card {
-    height: 22vh;
+    min-height: 220px;
     padding: 2vh 4vh;
-    overflow: hidden;
     position: relative;
     /* box-shadow: 0 0 10px rgb(158, 158, 158); */
     border: 6px solid rgb(241, 241, 241);
     border-radius: 5px;
+    box-sizing: border-box; /*aviod position of content to change when the border changes*/
+    
 }
 .card:active{
     border: 2px solid rgb(241, 241, 241);
 }
 
-h2,p{
+
+h2,p{ 
     margin:5px 0px;
 }
 p.date{
@@ -51,23 +55,7 @@ a.continue{
 .tag-design{
     color:green;
 }
-/*footer:*/
-footer{
-    margin-top: 15px;
-    padding:3vh;
-    background-color: rgb(237, 237, 255);
-    height: 6vh;
-    display: flex;
-    flex-direction: column;
-    align-content:center;
-    text-align: center;
-}
-footer span{
-    color:rgb(154, 154, 154);
-}
-footer a{
-    color:rgb(62, 146, 248);
-}
+
 /*mobile setting*/
 @media (max-width: 700px) {
     body{

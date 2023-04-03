@@ -1,15 +1,16 @@
-/* *{
-    box-sizing: border-box;
-} */
+
 body{
     margin-top: 5vh;
     /* min-height:100vh; */
+    
 
 }
 
 .blog-container{
-    width: 1000px;
+    width: 65%;
+    /* width:1000px; */
     margin: 0 auto;
+    z-index: 9;
 }
 
 /* main section */
@@ -18,12 +19,11 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* position:relative; */
-    /* overflow-y: scroll; */
+    margin-bottom: 8rem;
 }
 /* article */
 .post-content{
-    width:650px;
+    width:65%;
     margin-left: 20px;
 }
 .title-section{
@@ -55,17 +55,40 @@ a{
 span{
     color: rgb(147, 147, 147);
 }
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 20px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.btn-older {
+    color: #007bff;
+    background-color: transparent;
+    border-color: #007bff;
+}
+.btn-older:hover{
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-newer {
+    color: rgb(169, 173, 176);
+    background-color: transparent;
+    border-color: rgb(169, 173, 176);
+}
+.btn-newer:hover{
+    color: white;
+    background-color: rgb(169, 173, 176);
+    border-color: rgb(169, 173, 176);
+}
 /* aside */
 .sider{
-    width:300px;
-    /* position: -webkit-sticky; */
-    position: sticky;
-    top: 0;
-
-    
+    width:30%;  
 }
 .about{
-    width:inherit;
+    width:100%;
     min-height:100px;
     background-color:rgb(246,247,249) ;
     padding:20px;
@@ -75,7 +98,7 @@ i{
     font-size: 25px;
 }
 .archives, .elsewhere{
-    width:inherit;
+    width:100%;
     min-height:100px;
     padding:20px;
     margin-top:10px;
@@ -87,3 +110,25 @@ i{
     margin-bottom: 5px;
 }
 
+@media (max-width: 700px) {
+    body{
+        margin:2rem 2rem;
+    }
+    .blog-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .post-content{
+        width:100%;
+        margin-left: 0;
+    }
+    .sider{
+        width:100%;  
+    }
+  }
